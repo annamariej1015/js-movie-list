@@ -11,6 +11,8 @@ The function should take a movieTitle parameter that lets you search by differen
 files to create: movie-list.html, movie-list.js
 */
 // Testing push// -jeff
+
+
 movieList = [
     {
         title: 'Interstellar',
