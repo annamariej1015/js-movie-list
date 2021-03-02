@@ -22,7 +22,7 @@
                         <h3>Genre: Scince-Fiction</h3>
                         <h3>Year: 2014</h3>
                         <h3>imdb rating: 8.6</h3></p>    
-                        <input type="button" value="Movie Info" id="1" onclick="c();"></input>
+                        <input type="button" value="Movie Info" id="1" onclick="alert(`${movie.title}: ${movie.description}`);"></input>
                     </div>
                
                <div class="card">
@@ -70,3 +70,24 @@
   <script src="js/movie-list.js"></script>
 </body>
 </html>
+
+
+
+
+const printList = ()=>{
+    movieFilms.forEach(movie =>{
+        alert(`${movie.title}: ${movie.description}`);
+        
+        // add movie info to Ui
+         const addFlimToUI = document.querySelector('.ui-movie');
+         addFlimToUI.innerHTML = `
+         <h1>${movie.title}</h1>
+         <ul>
+             <li><span>Year: ${movie.year}</span></li>
+             <li><span>genre: ${movie.genre}</span></li>
+             <li><span>Description:${movie.description}</span></li>
+             <li><span>imdbRating:${movie.imdbRating}</span></li>
+         </ul>`
+    });
+   
+}
