@@ -13,7 +13,7 @@ files to create: movie-list.html, movie-list.js
 // Testing push// -jeff
 
 
-movieList = [
+let movies = [
     {
         title: 'Interstellar',
         year: '2014',
@@ -48,33 +48,34 @@ movieList = [
         genre: 'animation, adventure, family',
         description: "In the distant future, a small waste-collecting robot inadvertently embarks on a space journey that will ultimately decide the fate of mankind",
         imdbRating: '8.4',
-    },
+    }
 ];
-
-movieList.forEach((movieList) => {
-    console.log(`Your movie list includes: ${movieList.title}, ${movieList.year}, ${movieList.genre}, ${movieList.description}, ${movieList.imdbRating}`);
-});
+  
+  // Loop and find an instance by a parameter//
 
 
-const findMovie = movieList.find(movieList => {
-    return movieList.title === 'Interstellar';
-});
+  const titleDetails = () => {
 
-console.log(findMovie);
+        const movieTitle = prompt("Which movie do you want info for?");
+    
+        let foundMovie = JSON.stringify(movies.find(movie => movie.name === movieTitle));
+        
+        if (foundMovie) alert(foundMovie);
+        else alert(`Could not find ${movieTitle}`);
+    };
 
-const movieDetails = () => {
-    movies.forEach(m => {
-        console.log(`My movie title is ${m.title}and it came out in ${m.year}`)
-    });
-};
-movieDetails();
+//Excercise Assignments
 
-const titleDetails = movieTitle =>{
-    let foundMovie = movies.find(movie => {
-        return movie.title === movieTitle;
-    });
-    if (foundMovie) console.log(foundMovie);
-    else console.log(`Could not find the ${movieTitle}`);
-};
+let id = 5;
 
-titleDetails(Interstellar);
+const addMovie = (title, description, year, genre, imdbRating) => {
+    movies.push(movie = {id, title, description, year, genre, imdbRating});
+    id += 1;
+}
+
+addMovie('Vanilla Sky','A rich bachelor loses all his fam and fortune from an accident and suddenly changes his whole life for better from it', 2001, ['Romance', 'Science Fiction'], 8.3);
+
+
+console.log(movies);
+
+
