@@ -11,46 +11,54 @@
 <body>
     <section>
         <div class="container">
-            <h1 class="Heading text-center">Anna $ Jeff's Movie List</h1>
+            <header class="text-center">Anna $ Jeff's Movie List</header>
+            <div class="row">
+                <div class="col text-center">
+                    <h1 class="text-center">Find Your Movie!</h1>
+                    <button class="btn btn-info" onClick="prompt('Which movie would you like to find?')";>Search</button>
+                </div>
+            </div>
 
             <div class="card-wrapper">
                
                 <div class="card">
                  <img src="/js-projects/images/Interstellar.png" alt="interstellar" class="card-img">
-                    <h1 class="text-center">Interstellar</h1>
+                    <h1 class="text-center"></h1>
                     <p class="text-center">
                         <h3>Genre: Scince-Fiction</h3>
                         <h3>Year: 2014</h3>
                         <h3>imdb rating: 8.6</h3></p>    
-                        <input type="button" value="Movie Info" id="1" onclick="alert(movieList.title);"></input>
-                    
+                        <input type="button" value="Movie Info" id="mov1" onclick="alert('Interstellar');"></input> 
+                    </div>
+              
                
                <div class="card">
                 <img src="/js-projects/images/B&B.png" alt="b&b" class="card-img">
-                   <h1 class="text-center">Beauty & Beast</h1>
+                   <h1 class="text-center"></h1>
                    <p class="text-center">
                     <h3>Genre: Animation/Family-Film</h3>
                     <h3>Year: 1991</h3>
                     <h3>imdb rating: 8</h3></p>                    
-                    <input type="button" value="Movie Info" id="2" onclick="alert(movieList.title);"></input>                   </div>
-              
+                    <input type="button" value="Movie Info" id="mov2" onclick="alert('Beauty and the Beast');"></input> 
+                </div>              
               <div class="card">
                 <img src="/js-projects/images/Padmaavat.png" alt="padmaavat" class="card-img">
-                   <h1 class="text-center">Padmaavat</h1>
+                   <h1 class="text-center"></h1>
                    <p class="text-center">
                     <h3>Genre: Drama</h3>
                     <h3>Year: 2018</h3>
                     <h3>imdb rating: 7</h3></p>                    
-                    <input type="button" value="Movie Info" id="3" onclick="alert(movieList.title);"></input>                   </div>
-                
+                    <input type="button" value="Movie Info" id="mov3" onclick="alert('Padmaavat');"></input> 
+                </div>                
                    <div class="card">
                     <img src="/js-projects/images/casablanca.jpeg" alt="casablanca" class="card-img">
-                       <h1 class="text-center">Casablanca</h1>
+                       <h1 class="text-center"></h1>
                        <p class="text-center">
                         <h3>Genre: Drama</h3>
                         <h3>Year: 1942</h3>
                         <h3>imdb rating: 8.5</h3></p>                        
-                        <input type="button" value="Movie Info" id="4" onclick="alert(movieList.title);"></input>                       </div>
+                        <input type="button" value="Movie Info" id="mov4" onclick="alert('Casablanca');"></input> 
+                    </div>
                   
                   <div class="card">
                     <img src="/js-projects/images/download.jpeg" alt="wall-e" class="card-img">
@@ -59,8 +67,9 @@
                         <h3>Genre: Animation/Family-film</h3>
                         <h3>Year: 2008</h3>
                         <h3>imdb rating: 8.4</h3></p>                        
-                        <input type="button" value="Movie Info" id="5" onclick="alert(movieList.title);"></input>                       </div>
-                  </div>
+                        <input type="button" value="Movie Info" id="2" onclick="alert('Wall-E');"></input> 
+                    </div>                 
+                 </div>
             </div>
         
 
