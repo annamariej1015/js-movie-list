@@ -1,85 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="e"></html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Javascript Projects</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <title>The Movie List</title>
+    <link rel="stylesheet" href="/js-movie-list/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/js-movie-list/css/jeffstyle.css">
 </head>
 <body>
     <section>
-        <div class="container">
-            <header class="text-center">Anna $ Jeff's Movie List</header>
-            <div class="row">
-                <div class="col text-center">
+            
+            <header class="text-center">Anna & Jeff's Movie List</header>
+            
+                <div class="text-center">
                     <h1 class="text-center">Find Your Movie!</h1>
-                    <button class="btn btn-info" onClick="prompt('Which movie would you like to find?')";>Search</button>
+                    <button class="btn btn-dark mt-3" onClick="prompt('Which movie would you like to find?')";>Search</button>
                 </div>
-            </div>
-
-            <div class="card-wrapper">
-               
-                <div class="card">
-                 <img src="/js-projects/images/Interstellar.png" alt="interstellar" class="card-img">
-                    <h1 class="text-center"></h1>
-                    <p class="text-center">
-                        <h3>Genre: Scince-Fiction</h3>
-                        <h3>Year: 2014</h3>
-                        <h3>imdb rating: 8.6</h3></p>    
-                        <input type="button" value="Movie Info" id="mov1" onclick="alert('Interstellar');"></input> 
-                    </div>
+      
+            <div class="container col-sm-6-md-3">
               
-               
-               <div class="card">
-                <img src="/js-projects/images/B&B.png" alt="b&b" class="card-img">
-                   <h1 class="text-center"></h1>
-                   <p class="text-center">
-                    <h3>Genre: Animation/Family-Film</h3>
-                    <h3>Year: 1991</h3>
-                    <h3>imdb rating: 8</h3></p>                    
-                    <input type="button" value="Movie Info" id="mov2" onclick="alert('Beauty and the Beast');"></input> 
-                </div>              
-              <div class="card">
-                <img src="/js-projects/images/Padmaavat.png" alt="padmaavat" class="card-img">
-                   <h1 class="text-center"></h1>
-                   <p class="text-center">
-                    <h3>Genre: Drama</h3>
-                    <h3>Year: 2018</h3>
-                    <h3>imdb rating: 7</h3></p>                    
-                    <input type="button" value="Movie Info" id="mov3" onclick="alert('Padmaavat');"></input> 
-                </div>                
-                   <div class="card">
-                    <img src="/js-projects/images/casablanca.jpeg" alt="casablanca" class="card-img">
-                       <h1 class="text-center"></h1>
-                       <p class="text-center">
-                        <h3>Genre: Drama</h3>
-                        <h3>Year: 1942</h3>
-                        <h3>imdb rating: 8.5</h3></p>                        
-                        <input type="button" value="Movie Info" id="mov4" onclick="alert('Casablanca');"></input> 
-                    </div>
-                  
-                  <div class="card">
-                    <img src="/js-projects/images/download.jpeg" alt="wall-e" class="card-img">
-                       <h1 class="text-center">Wall-E</h1>
-                       <p class="text-center">
-                        <h3>Genre: Animation/Family-film</h3>
-                        <h3>Year: 2008</h3>
-                        <h3>imdb rating: 8.4</h3></p>                        
-                        <input type="button" value="Movie Info" id="2" onclick="alert('Wall-E');"></input> 
-                    </div>                 
+               <div class="card text-center">
+                  <div class="imgBx"> 
+                 <img src="/js-movie-list/images/Interstellar.png" class="img">
+                  </div>  
+                 <div class="content text-center">
+                       <h1></h1>
+                        <p>Genre: Scince-Fiction</p>
+                        <p>Year: 2014</p>
+                        <p>imdb rating: 8.6</p>
+                       
                  </div>
+               <input type="button" class="btn-dark btn-xs" value="Movie Info" id="0" onclick="alert('Interstellar')";></input> 
+                    
+               </div>
+                
+               <div class="card text-center">
+                 <div class="imgBx">
+                <img src="/js-movie-list/images/B&B.png" class="img">
+                 </div>
+                   <div class="content text-center">
+                   <h1></h1>
+                    <p>Genre: Animation/Family-Film</p>
+                    <p>Year: 1991</p>
+                    <p>imdb rating: 8</p>
+                   </div>                 
+                    <input type="button" class="btn-warning mt--1" value="Movie Info" id="1" onclick="alert('Beauty and the Beast')";></input> 
+                </div>      
+                       
+              <div class="card text-center">
+                <div class="imgBx">
+                <img src="/js-movie-list/images/Padmaavat.png" class="img">
+                </div>
+                   <div class="content text-center">
+                   <h2></h2>
+                    <p>Genre: Drama</p>
+                    <p>Year: 2018</p>
+                    <p>imdb rating: 7</p>
+                   </div>                 
+                    <input type="button" class="btn-warning mt-3" value="Movie Info" id="2" onclick="alert('Padmaavat')";></input> 
+                </div>
+
+                   <div class="card text-center">
+                     <div class="imgBx">
+                    <img src="/js-movie-list/images/casablanca.jpeg" class="img">
+                     </div>
+                    <div class="content text-center">
+                       <h2></h2>
+                        <p>Genre: Drama</p>
+                        <p>Year: 1942</p>
+                        <p>imdb rating: 8.5</p>
+                    </div>                     
+                        <input type="button" class="btn-dark mt-3" value="Movie Info" id="3" onclick="alert('Casablanca')";></input> 
+                    </div>
+                   
+                  <div class="card text-center">
+                    <div class="imgBx">
+                    <img src="/js-movie-list/images/download.jpeg" class="img">
+                       <div class="content text-center">
+                       <h2></h2>
+                        <p>Genre: Animation/Family-film</p>
+                        <p>Year: 2008</p>
+                        <p>imdb rating: 8.4</p>
+                       </div>                     
+                        <input type="button" class="btn-warning mt-3" value="Movie Info" id="4" onclick="alert('Wall-E')";></input> 
+                    </div>                 
+                 
             </div>
-        
+            </div>
+            
+            
 
         </section>
+
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
-  <script src="/js-movie-list/movie-list.js"></script>
+  <script src="/js-projects/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  <script src="/js-movie-list/js/jeffs-file.js"></script>
+  
+  
 </body>
 </html>
-
-
-
-
