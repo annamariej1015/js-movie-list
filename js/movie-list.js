@@ -69,6 +69,7 @@ const titleDetails = () => {
   if (foundMovie) alert(foundMovie);
   else alert(`Could not find ${movieTitle}`);
 };
+  console.log(titleDetails);
 
 //Excercise Assignments
 
