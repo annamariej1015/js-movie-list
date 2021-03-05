@@ -69,21 +69,19 @@ const titleDetails = (movieTitle) => {
   }else {
     alert(`Movie was not found.`);
   };
-}
-//Excercise Assignments
-
-let id = 5;
-
-const addMovie = (title, description, year, genre, imdbRating) => {
-  movies.push((movie = { id, title, description, year, genre, imdbRating }));
-  id += 1;
 };
 
 
-addMovie(
-  'Vanilla Sky',
-  'A rich bachelor loses all his fam and fortune from an accident and suddenly changes his whole life for better from it',
-  2001,
-  ['Romance', 'Science Fiction'],
-  8.3
-)
+
+
+
+const newMovie = (title,year,genre,description, imdbRating) =>{
+  movies.push({title,year,genre,description,imdbRating})
+};
+
+newMovie('Vanilla Sky','A rich bachelor loses all his fam and fortune from an accident and suddenly changes his whole life for better from it',
+2001,['Romance', 'Science Fiction'],8.3);
+//Create a new movie object
+
+console.log(newMovie);
+console.log(movies);
